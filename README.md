@@ -6,7 +6,7 @@ Utility program for binding actions to keys on the Logitech G600 gaming mouse. S
 
 Before running this program open the Logitech Gaming Software on a Windows or Mac OS machine. Assign the three basic mouse buttons to their standard functions. The G-shift button should be assigned to the G-shift function. All the remaining buttons (scroll left, scroll right, G7, ... G20) should be set to emulate (unique) keyboard keys (but not modifier keys).
 
-## Usage
+## Usage (original)
 
 1. Clone this repository.
 2. Open `g600.c` and fill in the commands for the keys.
@@ -20,4 +20,12 @@ The program needs privileges to communicate with G600 so typically it'll be star
 ```bash
 sudo chown .input g600
 sudo chmod g+s g600
+```
+
+## Usage (cpp)
+
+1. Clone this repository.
+2. Open `g600.cpp` and fill in the commands for the keys in the main function.
+3. Compile with `g++ g600.c -o g600`.
+4. Run with `sudo ./g600`.
 ```
